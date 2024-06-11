@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+
+    <form action="" method="GET">
+        <label for="name">Name: </label><br/>
+        <input type="text" name="name" placeholder="Enter Name" required /><br/><br/>
+
+        <label for="email">Email</label><br/>
+        <input type="email" name="email" placeholder="Enter Email" required /><br/><br/>
+
+        <label for="phone">Phone</label><br/>
+        <input type="tel" name="phone" placeholder="Enter Phone Number" 
+        pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required /><br/><br/>
+
+        <label for="rank">Rank</label><br/>
+        <input type="number" name="rank" placeholder="Enter your Rank" /><br/><br/>
+
+        <label for="course">Frontend Course</label><br/>
+        <select name="course">
+            <option name="course" value="HTML">HTML</option>
+            <option name="course" value="CSS">CSS</option>
+            <option name="course" value="Javascript">Javascript</option>
+            <option name="course" value="ReactJS">React JS</option>
+        </select><br/><br/>
+
+        <input type="checkbox" name="html" value="HTML"/>
+        <label for="programming">HTML</label><br/>
+        
+        <input type="checkbox" name="css" value="CSS"/>
+        <label for="programming">CSS</label><br/><br/>
+
+        <input type="radio" name="gender" value="Male"/>
+        <label for="gender">Male</label><br/>
+
+        <input type="radio" name="gender" value="female"/>
+        <label for="gender">Female</label><br/>
+
+        <input type="submit" value="Submit Now" />
+    </form>
+    
+</body>
+</html>
