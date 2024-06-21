@@ -7,7 +7,17 @@
     <style>
         table,tbody, tr, td, th {border: 1px solid #000;
             border-collapse: collapse;}
-    </style>
+        tr:hover{background-color: blueviolet;color: #fff;}
+        tbody tr:first-child{background-color: aquamarine;}
+        tbody tr:last-child{background-color: chartreuse;}
+        tbody tr:nth-child(odd){background-color: black;color: #fff;}
+        tbody tr:nth-child(even){background-color: brown;color: white;}
+        /* tbody tr td{padding: 60px;} */
+        table{width: 300px;}
+        /* tbody tr td{padding: 60px 60px 60px 60px;} */
+        tbody tr td{padding: 10px 10px;text-align: left;vertical-align: bottom;}
+
+ </style>
 </head>
 <body>
 
@@ -16,9 +26,11 @@
             <table>
                 <h1>Students Data</h1>
                 <thead>
+                    <tr>
                     <th>SNo</th>
                     <th>Name</th>
                     <th>Qualification</th>
+                    </tr>
                 </thead>
             
                 <tbody>
