@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM</title>
+</head>
+<body>
+
+    <p id="abc"><p>
+    <p class="def"></p>
+    <h1></h1>
+
+    <p class="ghi"></p>
+
+    <p class="kk"></p>
+    <p class="kk"></p>
+
+    <script>
+        document.getElementById('abc').innerHTML="Good Morning";
+        document.getElementById('abc').style.color="red";
+        document.getElementById('abc').style.backgroundColor="yellow";
+    
+        let classs = document.getElementsByClassName('def');
+        if(classs.length>0){
+            classs[0].innerHTML="Hello How are you";
+            classs[0].style.color="green";
+        }
+    
+        let tag = document.getElementsByTagName('h1');
+        if(tag.length>0){
+            tag[0].innerHTML="This is my Tag Reference"
+        }
+
+        let qs = document.querySelector('.ghi');
+        if(qs){
+            qs.innerHTML="This is my Query Selector"
+        }
+
+        let qsa = document.querySelectorAll('.kk');
+        qsa.forEach((element)=>{
+            element.innerHTML="This is my QuerySelectorAll Method";
+            element.style.backgroundColor="magenta";
+        })
+
+    </script>
+    
+</body>
+</html>
