@@ -5,6 +5,8 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Test from "./Test";
 import One from "./One";
+import Destructure from "./Destructure";
+import User from "./User";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -12,6 +14,8 @@ root.render(
     <App />
     <Test />
     <One />
+    <Destructure />
+    <User />
   </React.StrictMode>
 );
 
