@@ -7,6 +7,7 @@ import Test from "./Test";
 import One from "./One";
 import Destructure from "./Destructure";
 import User from "./User";
+import Message from "./Message";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -16,6 +17,7 @@ root.render(
     <One />
     <Destructure />
     <User />
+    <Message />
   </React.StrictMode>
 );
 
